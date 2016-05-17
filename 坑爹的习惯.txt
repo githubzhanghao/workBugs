@@ -1,0 +1,20 @@
+源码：
+index.js:
+	$.ajax({
+		'url':"json/nav.json",
+		dataType:'json',
+		success:function(data){
+			console.log(data);
+		},
+		error:function(msg){
+			console.log(msg);
+		}
+        });
+
+nav.json:
+	{
+		"name":"商务平台",
+	}
+
+切记：习惯js用单引号的人，json一定不能用单引号，不然请求永远有问题。
+
